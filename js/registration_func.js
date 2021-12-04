@@ -53,40 +53,40 @@
 	function getVals(formControl, controlType) {
 		switch (controlType) {
 
-			case 'first_name':
+			case 'property_name':
 				// Get the value for a input text
 				var value = $(formControl).val();
-				$("#first_name").text(value);
+				$("#property_name").text(value);
 				break;
 
-			case 'last_name':
+			case 'property_star':
 				// Get the value for a input text
 				var value = $(formControl).val();
-				$("#last_name").text(value);
+				$("#property_star").text(value);
 				break;
 
-			case 'email':
+			case 'property_type':
 				// Get the value for a input text
 				var value = $(formControl).val();
-				$("#email").text(value);
+				$("#property_type").text(value);
 				break;
 
-			 case 'country':
+			 case 'manager_name':
 				// Get the value for a select
 				var value = $(formControl).val();
-				$("#country").text(value);
+				$("#manager_name").text(value);
 				break;
 
-			case 'user_name':
+			case 'manager_phone':
 				// Get the value for a input text
 				var value = $(formControl).val();
-				$("#user_name").text(value);
+				$("#manager_phone").text(value);
 				break;
 
-			case 'password':
+			case 'manager_email':
 				// Get the value for a input text
 				var value = $(formControl).val();
-				$("#password").text(value);
+				$("#manager_email").text(value);
 				break;
 		}
 	}

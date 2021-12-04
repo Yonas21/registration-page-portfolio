@@ -36,17 +36,17 @@
 </head>
 <body onLoad="setTimeout('delayedRedirect()', 8000)" style="background-color:#fff;">
 <?php
-						$mail = $_POST['email'];
+						$mail = $_POST['manageremail'];
 						$to = "info@domain.com";/* YOUR EMAIL HERE */
 						$subject = "Survey from Wilio";
 						$headers = "From: Survey from Wilio <noreply@yourdomain.com>";
 						$message = "DETAILS\n";
-						$message .= "\nFirst name: " . $_POST['firstname'];
-						$message .= "\nLast name: " . $_POST['lastname'];
-						$message .= "\nEmail: " . $_POST['email'];
+						$message .= "\nFirst name: " . $_POST['propertyname'];
+						$message .= "\nLast name: " . $_POST['propertystar'];
+						$message .= "\nEmail: " . $_POST['managername'];
 						$message .= "\nCountry: " . $_POST['country'];
-						$message .= "\nAge: " . $_POST['age'];
-						$message .= "\nGender: " . $_POST['gender'];
+						$message .= "\nAge: " . $_POST['managerphone'];
+						$message .= "\nGender: " . $_POST['manageremail'];
 						$message .= "\nTerms and conditions accepted: " . $_POST['terms']. "\n";
 	
 						$message .= "\nHow do rate your overall satisfaction about the service provided? " . $_POST['question_1']. "\n";
